@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:FacettoChatApp"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <!-- 
+        Adding the fonts from Fonts Folder
+        pack://application;,,,/Fonts/#Lato Regular : Adding the Fonts from Resource Folder
+        Lato Regular : is a Name of the font. Not a fileName.ttf. 
+                       To see the name of the font Double Click the <fileName.ttf>
+    -->
+    <FontFamily x:Key="LatoRegular"> pack://application;,,,/Fonts/#Lato Regular </FontFamily>
+    <FontFamily x:Key="LatoThin"> pack://application;,,,/Fonts/#Lato Thin </FontFamily>
+    <FontFamily x:Key="LatoBold">pack://application;,,,/Fonts/#Lato Bold</FontFamily>
+    <FontFamily x:Key="FontAwesome">pack://application;,,,/Fonts/#FontAwesome</FontFamily>
+
+    <!-- Setting the Default Font -->
+    <Style TargetType="{x:Type Control}" x:Key="BaseStyle">
+        <Setter Property="FontFamily" Value="{StaticResource LatoThin}" />
+    </Style>
+
+    <!-- Applying the style to the textblock because it doesn't inherit from window.controls -->
+    <Style TargetType="{x:Type TextBlock}" x:Key="BaseTextBlockStyle">
+        <Setter Property="FontFamily" Value="{StaticResource LatoThin}" />
+    </Style>
+
+    <!-- Applying the style -->
+    <Style TargetType="{x:Type Button}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type Label}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource BaseStyle}" />
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource BaseTextBlockStyle}" />
+    <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource BaseStyle}" />
+
+    <system:Double x:Key="FontSizeSmall"> 14 </system:Double>
+    <system:Double x:Key="FontSizeRegular"> 20 </system:Double>
+    <system:Double x:Key="FontSizeLarge"> 30 </system:Double>
+
+</ResourceDictionary>
