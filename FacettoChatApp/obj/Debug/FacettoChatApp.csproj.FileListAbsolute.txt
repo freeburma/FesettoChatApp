@@ -27,3 +27,7 @@ E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.g.cs
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.baml
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.g.cs
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.baml
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListItemControl.baml
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListControl.g.cs
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListControl.baml

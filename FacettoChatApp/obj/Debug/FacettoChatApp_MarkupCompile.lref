@@ -9,4 +9,6 @@ FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Styles\Windows.xaml;;
 FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Styles\Texts.xaml;;
 FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Styles\Fonts.xaml;;
 FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Controls\SideMenuControl.xaml;;
+FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Controls\Chat\ChatListItemControl.xaml;;
+FE:\Programing\C#\FacettoChatApp\FacettoChatApp\Controls\Chat\ChatListControl.xaml;;
 

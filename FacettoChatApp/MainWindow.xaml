@@ -161,7 +161,7 @@
             
            <!-- Calling the Side Menu from SideMenuControl.xaml -->
             <local:SideMenuControl>
-                <Button Content="Test" />
+                <local:ChatListControl />
             </local:SideMenuControl>
         </Grid>
     </Border>
