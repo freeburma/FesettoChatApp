@@ -16,10 +16,13 @@ namespace FacettoChatApp
             switch ((ApplicationPage) value)
             {
                 case ApplicationPage.Login:
-                    return new LoginPage(); 
+                    return new LoginPage ();         // Pointing to the Login Page
+
+                case ApplicationPage.Chat:
+                    return new ChatPage ();         // Pointing to the Chat Page
 
                 default:
-                    Debugger.Break();   // Stopping the debugging
+                    Debugger.Break();               // Stopping the debugging
                     return null; 
             }
         }

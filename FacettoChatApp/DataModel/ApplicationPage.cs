@@ -6,10 +6,16 @@ namespace FacettoChatApp
     /// </summary>
     public enum ApplicationPage
     {
-        /*
-            The initial login page 
-         */
+       /// <summary>
+       ///  The initial login page 
+       /// </summary>
+        
         Login = 0,
+
+        /// <summary>
+        /// The main chat page
+        /// </summary>
+        Chat = 1,
 
     }// end class
 }

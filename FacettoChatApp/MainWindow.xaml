@@ -142,15 +142,27 @@
     </WindowChrome.WindowChrome>
     
     <!-- Actual Window Content for UI -->
-    <Grid Background="{StaticResource ForegroundLightBrush}">
+    <Border Background="{StaticResource WordBlueBrush}">
+        <Grid>
 
-        <!-- Blue background image 
-        <Grid.Background>
-            <ImageBrush TileMode="Tile" ViewboxUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
-        </Grid.Background>
-         -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- Blue background image -->
+            <Grid.Background>
+                <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
+            </Grid.Background>
+         
         
-        <!-- Adding the LoginPage to the form -->
-        <Frame x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" />
-    </Grid>
+            <!-- Adding the LoginPage to the form -->
+            <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" />
+            
+           <!-- Calling the Side Menu from SideMenuControl.xaml -->
+            <local:SideMenuControl>
+                <Button Content="Test" />
+            </local:SideMenuControl>
+        </Grid>
+    </Border>
 </Window>

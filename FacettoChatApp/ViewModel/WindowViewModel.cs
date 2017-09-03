@@ -43,12 +43,12 @@ namespace FacettoChatApp
         /// <summary>
         /// The smallest window size
         /// </summary>
-        public double WindowMinimumWidth { get; set; } = 400;
+        public double WindowMinimumWidth { get; set; } = 800;
 
         /// <summary>
         /// The largest window size
         /// </summary>
-        public double WindowMaximumHeight { get; set; } = 400;
+        public double WindowMaximumHeight { get; set; } = 500;
 
         /// <summary>
         /// True if the window should be borderless because it is docked or maximized.
@@ -128,7 +128,7 @@ namespace FacettoChatApp
         /// <summary>
         /// The curent page of the application <seealso cref="ApplicationPage"/>
         /// </summary>
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login; 
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Chat; 
 
         #endregion
 

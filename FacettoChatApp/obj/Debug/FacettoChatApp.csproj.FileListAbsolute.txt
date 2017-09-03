@@ -23,3 +23,7 @@ E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.g.resour
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.Properties.Resources.resources
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.csproj.GenerateResource.Cache
 E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.csprojResolveAssemblyReference.cache
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.g.cs
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.baml
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.g.cs
+E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.baml
