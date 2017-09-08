@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     public class LoginViewModel : BaseViewModel
     {

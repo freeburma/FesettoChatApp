@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
 
     /// <summary>

@@ -1,5 +1,5 @@
 ﻿
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// A page of the application.

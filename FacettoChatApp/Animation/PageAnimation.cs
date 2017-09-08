@@ -1,5 +1,5 @@
 ﻿
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// Styles of page animations for appearing/disappering

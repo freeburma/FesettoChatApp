@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// A view model for the overview chat list 

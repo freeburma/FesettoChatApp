@@ -4,7 +4,9 @@ using System.Windows;//
 using System.Windows.Controls;  //
 using System.Windows.Media.Animation;//
 
-namespace FacettoChatApp
+// FacettoChatApp
+
+namespace FasettoChatApp
 {
     /// <summary>
     /// A base page for all pages to gain base functionality
@@ -68,6 +70,7 @@ namespace FacettoChatApp
         /// </summary>
         public BasePage()
         {
+           
             // If we are animating in, hide to begin with
             if (this.PageLoadAnimation != PageAnimation.None)
                 this.Visibility = Visibility.Collapsed;

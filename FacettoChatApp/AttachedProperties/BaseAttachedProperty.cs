@@ -2,7 +2,7 @@
 using System;
 using System.Windows;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// A base attached property to replace teh vanilla WPF attached property created by Develoepr (25-Aug-17 11:54 am)

@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacettoChatApp", "FacettoChatApp\FacettoChatApp.csproj", "{4C58C2FB-75A7-49FB-82EE-755E686F5230}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasettoChatApp", "FacettoChatApp\FasettoChatApp.csproj", "{4C58C2FB-75A7-49FB-82EE-755E686F5230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasettoChatApp.Core", "FesettoChatApp.Core\FasettoChatApp.Core.csproj", "{7BFED354-A174-4A12-9690-53921E8D8023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{4C58C2FB-75A7-49FB-82EE-755E686F5230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C58C2FB-75A7-49FB-82EE-755E686F5230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C58C2FB-75A7-49FB-82EE-755E686F5230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFED354-A174-4A12-9690-53921E8D8023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFED354-A174-4A12-9690-53921E8D8023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFED354-A174-4A12-9690-53921E8D8023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFED354-A174-4A12-9690-53921E8D8023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B29191F3-1431-4C3A-A0CE-63B22FB6EE51}
 	EndGlobalSection
 EndGlobal

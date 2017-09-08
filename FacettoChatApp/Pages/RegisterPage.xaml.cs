@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// Interaction logic for RegisterPage.xaml

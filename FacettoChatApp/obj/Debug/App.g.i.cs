@@ -58,7 +58,7 @@ namespace FacettoChatApp {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/FacettoChatApp;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FasettoChatApp;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Media;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// A converter that takes in an RGB string such as FF00FF and converts it to a WPF brush

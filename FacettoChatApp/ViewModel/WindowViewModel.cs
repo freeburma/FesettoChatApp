@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// The view model for the custom flat window

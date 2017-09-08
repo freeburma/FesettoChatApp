@@ -1,5 +1,5 @@
 ﻿
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// Design-time data for a <see cref="ChatListItemViewModel"/>

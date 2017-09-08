@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     internal class StructureLayoutAttribute : Attribute
     {

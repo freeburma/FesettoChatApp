@@ -3,7 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// Converts the <see cref="ApplicationPage"/> to an actual view/Page

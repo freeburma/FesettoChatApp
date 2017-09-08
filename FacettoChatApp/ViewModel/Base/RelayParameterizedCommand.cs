@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     
     /// <summary>

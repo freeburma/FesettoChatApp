@@ -1,7 +1,7 @@
 ﻿
 using System.Windows;
 
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

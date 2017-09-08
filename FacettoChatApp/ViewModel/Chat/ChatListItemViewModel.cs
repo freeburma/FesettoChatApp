@@ -1,5 +1,5 @@
 ﻿
-namespace FacettoChatApp
+namespace FasettoChatApp
 {
     /// <summary>
     /// A view model for each chat list item in the overview chat list 
