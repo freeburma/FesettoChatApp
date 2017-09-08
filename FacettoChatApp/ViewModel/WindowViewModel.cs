@@ -128,7 +128,7 @@ namespace FacettoChatApp
         /// <summary>
         /// The curent page of the application <seealso cref="ApplicationPage"/>
         /// </summary>
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Chat; 
+        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login; 
 
         #endregion
 

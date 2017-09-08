@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Programing\C#\FacettoChatApp\FacettoChatApp\obj\Debug\
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\
 FacettoChatApp
 none
 false
 DEBUG;TRACE
-E:\Programing\C#\FacettoChatApp\FacettoChatApp\App.xaml
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\App.xaml
 11-79730566
 
 41-1286092003
-15-1667028163
+151438089803
 Controls\Chat\ChatListControl.xaml;Controls\Chat\ChatListItemControl.xaml;Controls\SideMenuControl.xaml;Pages\ChatPage.xaml;Pages\LoginPage.xaml;MainWindow.xaml;Styles\Colors.xaml;Styles\Buttons.xaml;Styles\Windows.xaml;Styles\Texts.xaml;Styles\Fonts.xaml;
 
-False
+True
 
