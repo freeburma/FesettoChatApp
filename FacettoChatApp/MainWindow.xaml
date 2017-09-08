@@ -115,7 +115,7 @@
                                     
                                     
 
-                                    <!-- Page Content -->
+                                    <!-- Page Content will changes here -->
                                     <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" >
                                         <ContentPresenter Content="{TemplateBinding Content}" />
                                     </Border>

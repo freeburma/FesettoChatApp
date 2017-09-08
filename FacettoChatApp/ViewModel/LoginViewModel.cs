@@ -31,16 +31,28 @@ namespace FacettoChatApp
         /// </summary>
         public ICommand LoginCommand { get; set; }
 
+        /// <summary>
+        /// The command to register for a new account
+        /// </summary>
+        public ICommand RegisterCommand { get; set; }
+
+        #endregion
+
+        #region Constructor
+
         public LoginViewModel()
         {
             /// Create the commands <see cref="RelayCommand"/> 
             LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
+            RegisterCommand = new RelayCommand(async () => await RegisterAsync ());
 
 
         }// end LoginViewModel()
 
 
         #endregion
+
+        #region Tasks 
 
         /// <summary>
         /// Attempts to log the user in
@@ -66,12 +78,26 @@ namespace FacettoChatApp
 
                 // Important: Never store unsecure password in variable like this 
                 var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
-            }); 
-           
+            });
 
-            
+
+
             // LoginIsRunning = false;
 
-        }
+        }// end Login()
+
+        /// <summary>
+        /// Takes the user to the register page. 
+        /// </summary>
+        public async Task RegisterAsync()
+        {
+            // TODO: Go to register page?
+            ((WindowViewModel)((MainWindow)Application.Current.MainWindow).DataContext).CurrentPage = ApplicationPage.Register; 
+
+            await Task.Delay(1); 
+
+        }// end Login()
+
+        #endregion
     }
 }

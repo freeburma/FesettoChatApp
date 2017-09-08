@@ -18,6 +18,9 @@ namespace FacettoChatApp
                 case ApplicationPage.Login:
                     return new LoginPage ();         // Pointing to the Login Page
 
+                case ApplicationPage.Register:
+                    return new RegisterPage();         // Pointing to the Register Page
+
                 case ApplicationPage.Chat:
                     return new ChatPage ();         // Pointing to the Chat Page
 

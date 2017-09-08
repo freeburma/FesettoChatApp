@@ -17,5 +17,11 @@ namespace FacettoChatApp
         /// </summary>
         Chat = 1,
 
+        /// <summary>
+        /// The Register page
+        /// </summary>
+        Register = 2,
+
+
     }// end class
 }

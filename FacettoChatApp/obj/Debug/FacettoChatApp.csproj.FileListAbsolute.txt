@@ -65,3 +65,5 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.csproj.G
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.csproj.CoreCompileInputs.cache
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.exe
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FacettoChatApp.pdb
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\RegisterPage.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\RegisterPage.baml
