@@ -1,5 +1,8 @@
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.csproj.CoreCompileInputs.cache
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\FasettoChatApp.Core.dll
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\FasettoChatApp.Core.pdb
-E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.csproj.CoreCompileInputs.cache
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\Newtonsoft.Json.dll
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\Newtonsoft.Json.xml
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.dll
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.pdb
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.csprojResolveAssemblyReference.cache

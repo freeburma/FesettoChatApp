@@ -1,4 +1,5 @@
-﻿using System;//
+﻿using FasettoChatApp.Core;
+using System;//
 using System.Threading.Tasks;//
 using System.Windows;//
 using System.Windows.Controls;  //
@@ -46,7 +47,7 @@ namespace FasettoChatApp
         /// </summary>
         public VM ViewModel
         {
-            get { return mViewModel; }
+            get => mViewModel; 
             set
             {
                 // If nothing has changed, return and do nothing.
@@ -57,7 +58,7 @@ namespace FasettoChatApp
                 mViewModel = value;
 
                 // Set the data context for this page.
-                this.DataContext = mViewModel;  // Bind to the Email at the login page
+                DataContext = mViewModel;  // Bind to the Email at the login page
             }
         }
 
@@ -70,7 +71,7 @@ namespace FasettoChatApp
         /// </summary>
         public BasePage()
         {
-           
+            
             // If we are animating in, hide to begin with
             if (this.PageLoadAnimation != PageAnimation.None)
                 this.Visibility = Visibility.Collapsed;
@@ -91,17 +92,17 @@ namespace FasettoChatApp
         /// </summary>
         /// <param name="sender">  </param>
         /// <param name="e">   </param>
-        private async void BasePage_Loaded(object sender, RoutedEventArgs e)
+        private void BasePage_Loaded(object sender, RoutedEventArgs e)
         {
             // Animat ethe page in 
-           await AnimateIn(); 
+           Task.Run (async () => await AnimateInAsync()); 
         }
 
         /// <summary>
         /// Animates in this page.
         /// </summary>
         /// <returns></returns>
-        public async Task AnimateIn()
+        public async Task AnimateInAsync()
         {
             // Make sure we have something to do 
             if (this.PageLoadAnimation == PageAnimation.None)
@@ -117,7 +118,7 @@ namespace FasettoChatApp
                     // MessageBox.Show(">>> PageAnimation.SlideAndFadeInFromRight");
 
                     // Start the animation
-                    await this.SlideAndFadeInFromRight(this.SlideSeconds * 2); 
+                    await this.SlideAndFadeInFromRightAsync(this.SlideSeconds * 2); 
 
                     break;
                
@@ -129,7 +130,7 @@ namespace FasettoChatApp
         /// Animate the page out 
         /// </summary>
         /// <returns></returns>
-        public async Task AnimateOut ()
+        public async Task AnimateOutAsync ()
         {
             // Make sure we have something to do 
             if (this.PageUnloadAnimation == PageAnimation.None)
@@ -145,7 +146,7 @@ namespace FasettoChatApp
                     // MessageBox.Show(">>> PageAnimation.SlideAndFadeInFromRight");
 
                     // Start the animation
-                    await this.SlideAndFadeOutToLeft(this.SlideSeconds);
+                    await this.SlideAndFadeOutToLeftAsync(this.SlideSeconds);
 
                     break;
 

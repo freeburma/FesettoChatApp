@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FacettoChatApp.Properties {
+namespace FasettoChatApp.Properties {
     using System;
     
     
