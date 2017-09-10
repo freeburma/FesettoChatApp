@@ -4,12 +4,13 @@ using System.Windows;
 
 namespace FasettoChatApp
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        public ApplicationViewModel ApplicationViewModel => new ApplicationViewModel();
+        // public ApplicationViewModel ApplicationViewModel => new ApplicationViewModel();
 
         public MainWindow()
         {

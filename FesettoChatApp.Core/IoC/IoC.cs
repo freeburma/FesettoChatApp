@@ -1,9 +1,5 @@
 ﻿using Ninject;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FasettoChatApp.Core
 {
@@ -13,12 +9,17 @@ namespace FasettoChatApp.Core
     /// </summary>
     public static class IoC
     {
+        #region Public Properties 
         /// <summary>
         /// The kernel for our IoC container. 
         /// Kernel is basically where you get and bind all of your inf in the 
         /// whole of an inject. 
         /// </summary>
-        public static IKernel Kernel { get; private set; } = new StandardKernel(); 
+        public static IKernel Kernel { get; private set; } = new StandardKernel();
+
+        #endregion
+        
+        #region Construction
 
         /// <summary>
         /// Sets up the IoC container, binds all inf required and is ready for use.
@@ -31,6 +32,7 @@ namespace FasettoChatApp.Core
             BindViewModels(); 
         }// end Setup()
 
+
         /// <summary>
         /// Binds all singleton view models.
         /// </summary>
@@ -41,5 +43,22 @@ namespace FasettoChatApp.Core
             Kernel.Bind<ApplicationViewModel>().ToConstant(new ApplicationViewModel()); 
 
         }// end BindViewModels
+
+        #endregion
+
+        #region Helper
+
+        /// <summary>
+        /// Get's a service from the IoC, of the specified type
+        /// </summary>
+        /// <typeparam name="T"> The type to get </typeparam>
+        /// <returns></returns>
+        public static T Get<T>()
+        {
+            return Kernel.Get<T>();
+        }
+
+        #endregion
+
     }// end class
 }
