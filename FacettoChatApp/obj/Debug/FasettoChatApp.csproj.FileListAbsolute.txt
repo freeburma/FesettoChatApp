@@ -35,3 +35,5 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FasettoChatApp.csproj.C
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FasettoChatApp.exe
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FasettoChatApp.pdb
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\FasettoChatApp.csprojResolveAssemblyReference.cache
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Ninject.dll
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Ninject.xml

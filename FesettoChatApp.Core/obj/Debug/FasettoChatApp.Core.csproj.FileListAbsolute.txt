@@ -6,3 +6,5 @@ E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\Newtonsoft.Json.xm
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.dll
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.pdb
 E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\obj\Debug\FasettoChatApp.Core.csprojResolveAssemblyReference.cache
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\Ninject.dll
+E:\Programing\C#\FesettoChatApp\FesettoChatApp.Core\bin\Debug\Ninject.xml
