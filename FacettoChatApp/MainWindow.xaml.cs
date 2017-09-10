@@ -1,4 +1,5 @@
 ﻿
+using FasettoChatApp.Core;
 using System.Windows;
 
 namespace FasettoChatApp
@@ -8,14 +9,15 @@ namespace FasettoChatApp
     /// </summary>
     public partial class MainWindow : Window
     {
-       
+        public ApplicationViewModel ApplicationViewModel => new ApplicationViewModel();
+
         public MainWindow()
         {
             InitializeComponent();
 
          
             /// Linking with WindowViewModel <see cref="WindowViewModel.cs">
-            this.DataContext = new WindowViewModel(this); 
+            DataContext = new WindowViewModel(this); 
         }
     }
 }

@@ -114,11 +114,7 @@ namespace FasettoChatApp
         /// </summary>
         public GridLength TitleHeightGridLength => new GridLength(TitleHeight + ResizeBorder); 
 
-        /// <summary>
-        /// The curent page of the application <seealso cref="ApplicationPage"/>
-        /// </summary>
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login; 
-
+        
         #endregion
 
 
