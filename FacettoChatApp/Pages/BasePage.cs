@@ -77,7 +77,7 @@ namespace FasettoChatApp
                 this.Visibility = Visibility.Collapsed;
 
             // Listen out for the page loading
-            this.Loaded += BasePage_Loaded;
+            this.Loaded += BasePage_LoadedAsync;
 
             // Create a default view model
             this.ViewModel = new VM(); 
@@ -92,10 +92,10 @@ namespace FasettoChatApp
         /// </summary>
         /// <param name="sender">  </param>
         /// <param name="e">   </param>
-        private void BasePage_Loaded(object sender, RoutedEventArgs e)
+        private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
             // Animat ethe page in 
-           Task.Run (async () => await AnimateInAsync()); 
+            await AnimateInAsync(); 
         }
 
         /// <summary>

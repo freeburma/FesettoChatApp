@@ -158,7 +158,9 @@
          
         
             <!-- Adding the LoginPage to the form -->
-            <Frame Grid.Column="1" x:Name="MainFrame" Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" />
+            <Frame Grid.Column="1" 
+                   x:Name="MainFrame" 
+                   Content="{Binding CurrentPage, Converter={local:ApplicationPageValueConverter}}" />
             
            <!-- Calling the Side Menu from SideMenuControl.xaml -->
             <local:SideMenuControl>
