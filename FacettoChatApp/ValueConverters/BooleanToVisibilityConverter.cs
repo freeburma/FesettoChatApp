@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// A converter that takes in a boolean and returns a <see cref="Visibility"/>

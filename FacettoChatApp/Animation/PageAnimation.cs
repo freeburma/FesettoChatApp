@@ -1,5 +1,5 @@
 ﻿
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Styles of page animations for appearing/disappering

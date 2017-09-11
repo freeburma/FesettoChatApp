@@ -1,8 +1,9 @@
 ﻿
 using System;
 using System.Windows;
+using System.ComponentModel;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// A base attached property to replace teh vanilla WPF attached property created by Develoepr (25-Aug-17 11:54 am)
@@ -37,7 +38,7 @@ namespace FasettoChatApp
         /// <summary>
         /// The attached property for this class. 
         /// </summary>
-        public static readonly DependencyProperty ValueProperty = DependencyProperty.RegisterAttached("Value", typeof(Property), typeof(BaseAttachedProperty<Parent, Property>), new PropertyMetadata(new PropertyChangedCallback(OnValuePropertyChanged)));
+        public static readonly DependencyProperty ValueProperty = DependencyProperty.RegisterAttached("Value", typeof(Property), typeof(BaseAttachedProperty<Parent, Property>), new UIPropertyMetadata(new PropertyChangedCallback(OnValuePropertyChanged)));
 
         /// <summary>
         /// The callback event whent the <see cref="ValueProperty"/> is changed.

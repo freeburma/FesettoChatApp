@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     
     /// <summary>

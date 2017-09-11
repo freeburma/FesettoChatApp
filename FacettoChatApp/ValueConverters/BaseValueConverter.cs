@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// A base value converter taht allows direct XML usage

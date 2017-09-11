@@ -1,4 +1,4 @@
-﻿using FasettoChatApp.Core;
+﻿using Fasetto.Word.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml

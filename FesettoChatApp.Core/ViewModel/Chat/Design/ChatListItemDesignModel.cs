@@ -1,5 +1,5 @@
 ﻿
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     /// <summary>
     /// Design-time data for a <see cref="ChatListItemViewModel"/>

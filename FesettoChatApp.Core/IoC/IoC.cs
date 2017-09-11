@@ -1,7 +1,7 @@
 ﻿using Ninject;
 using System;
 
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
 
     /// <summary>
@@ -16,6 +16,7 @@ namespace FasettoChatApp.Core
         /// whole of an inject. 
         /// </summary>
         public static IKernel Kernel { get; private set; } = new StandardKernel();
+        
 
         #endregion
         

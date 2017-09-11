@@ -1,11 +1,11 @@
 ﻿
-using FasettoChatApp.Core;
+using Fasetto.Word.Core;
 using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Input;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// The view model for the custom flat window

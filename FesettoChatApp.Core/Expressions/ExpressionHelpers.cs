@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     /// <summary>
     /// Helper for expressions

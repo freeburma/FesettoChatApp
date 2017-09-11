@@ -3,7 +3,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /*
         This class is not used in the code. 

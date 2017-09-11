@@ -1,13 +1,7 @@
-﻿using FasettoChatApp.Core;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Fasetto.Word.Core;
 using System.Windows;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Interaction logic for App.xaml

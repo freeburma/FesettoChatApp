@@ -13,9 +13,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using FasettoChatApp.Core;
+using Fasetto.Word.Core;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Interaction logic for LoginPage.xaml

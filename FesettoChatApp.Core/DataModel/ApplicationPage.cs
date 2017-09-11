@@ -1,5 +1,5 @@
 ﻿
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     /// <summary>
     /// A page of the application.

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     public class LoginViewModel : BaseViewModel
     {
@@ -43,7 +43,7 @@ namespace FasettoChatApp.Core
         public LoginViewModel()
         {
             /// Create the commands <see cref="RelayCommand"/> 
-            LoginCommand = new RelayParameterizedCommand(async (parameter) => await Login(parameter));
+            LoginCommand = new RelayParameterizedCommand(async (parameter) => await LoginAsync(parameter));
             RegisterCommand = new RelayCommand(async () => await RegisterAsync ());
 
 
@@ -59,7 +59,7 @@ namespace FasettoChatApp.Core
         /// </summary>
         /// <param name="parameter"> The <see cref="SecureString"/> passed in form the view for the user's password</param>
         /// <returns></returns>
-        public async Task Login(object parameter)
+        public async Task LoginAsync(object parameter)
         {
             /*
              // This is define inside the ExpressionHelpers.cs
@@ -93,6 +93,8 @@ namespace FasettoChatApp.Core
         {
             // TODO: Go to register page?
             // ((WindowViewModel)((MainWindow)Application.Current.MainWindow).DataContext).CurrentPage = ApplicationPage.Register; 
+
+            IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register; 
 
             await Task.Delay(1); 
 

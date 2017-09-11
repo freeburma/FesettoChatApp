@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Interaction logic for ChatListControl.xaml

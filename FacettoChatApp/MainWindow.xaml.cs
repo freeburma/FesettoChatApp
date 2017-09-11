@@ -1,8 +1,7 @@
 ﻿
-using FasettoChatApp.Core;
 using System.Windows;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
 
     /// <summary>

@@ -2,9 +2,9 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using FasettoChatApp.Core;
+using Fasetto.Word.Core;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// Converts the <see cref="ApplicationPage"/> to an actual view/Page

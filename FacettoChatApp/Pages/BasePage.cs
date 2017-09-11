@@ -1,4 +1,4 @@
-﻿using FasettoChatApp.Core;
+﻿using Fasetto.Word.Core;
 using System;//
 using System.Threading.Tasks;//
 using System.Windows;//
@@ -7,7 +7,7 @@ using System.Windows.Media.Animation;//
 
 // FacettoChatApp
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// A base page for all pages to gain base functionality
@@ -58,7 +58,7 @@ namespace FasettoChatApp
                 mViewModel = value;
 
                 // Set the data context for this page.
-                DataContext = mViewModel;  // Bind to the Email at the login page
+                this.DataContext = mViewModel;  // Bind to the Email at the login page
             }
         }
 
@@ -94,7 +94,7 @@ namespace FasettoChatApp
         /// <param name="e">   </param>
         private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
-            // Animat ethe page in 
+            // Animate the page in 
             await AnimateInAsync(); 
         }
 

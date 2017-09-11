@@ -1,7 +1,0 @@
-﻿# Dependency Injection for this FasettoChatApp.Core project
-# Library Downloaded form Nuget Manager 
-# Library Names : 
-
-1. Ninject 
-2. FodyPropertyChange
-3. NewtonSoft.Json

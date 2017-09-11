@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 
-namespace FasettoChatApp
+namespace Fasetto.Word
 {
     /// <summary>
     /// The dock position of the window

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Security;
 using System.Runtime.InteropServices;
 
-namespace FasettoChatApp.Core
+namespace Fasetto.Word.Core
 {
     /// <summary>
     /// Helpers for <see cref="SecureString"/> class 
