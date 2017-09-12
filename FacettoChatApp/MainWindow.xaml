@@ -167,8 +167,10 @@
                    />
             
            <!-- Calling the Side Menu from SideMenuControl.xaml -->
-            <local:SideMenuControl>
+            <local:SideMenuControl local:AnimateSlideInFromLeftProperty.Value="False">
+                
                 <local:ChatListControl />
+                
             </local:SideMenuControl>
         </Grid>
     </Border>
