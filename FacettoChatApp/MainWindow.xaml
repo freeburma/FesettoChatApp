@@ -29,7 +29,7 @@
                                           Not a compile time.
                         <Border Background="Blue" Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
                          -->
-                        <Border Padding="{Binding OuterMarginSizeThickness, FallbackValue=10}">
+                        <Border Margin="{Binding OuterMarginSizeThickness, FallbackValue=10}">
                             <!-- Main window outline -->
                             <Grid>
                                 
@@ -116,8 +116,11 @@
                                     
                                     
 
-                                    <!-- Page Content will changes here -->
-                                    <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" >
+                                    <!-- 
+                                        Page Content will changes here. 
+                                        ClipToBounds="True" : will prevent the stratching the background page. 
+                                    -->
+                                    <Border Grid.Row="1" Padding="{Binding InnerContentPadding}" ClipToBounds="True">
                                         <ContentPresenter Content="{TemplateBinding Content}" />
                                     </Border>
                                     
@@ -147,7 +150,7 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="300" />
+                <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
@@ -167,7 +170,10 @@
                    />
             
            <!-- Calling the Side Menu from SideMenuControl.xaml -->
-            <local:SideMenuControl local:AnimateSlideInFromLeftProperty.Value="False">
+            <local:SideMenuControl Width="300" 
+                                   local:AnimateSlideInFromLeftProperty.Value="{Binding ApplicationViewModel.SideMenuVisible, 
+                                    Source={x:Static local:ViewModelLocator.Instance}}"
+                                   >
                 
                 <local:ChatListControl />
                 

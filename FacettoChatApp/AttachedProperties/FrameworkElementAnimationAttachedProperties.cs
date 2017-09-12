@@ -79,12 +79,12 @@ namespace Fasetto.Word
             if (value)
             {
                 // Animate in 
-                await element.SlideAndFadeInFromLeftAsync(); 
+                await element.SlideAndFadeInFromLeftAsync(FirstLoad ? 0.3f : 0.6f, keepMargin:false); 
             }
             else
             {
                 // Animate out 
-                await element.SlideAndFadeOutToLeftAsync(); 
+                await element.SlideAndFadeOutToLeftAsync(FirstLoad ? 0.3f : 0.6f, keepMargin: false);
             }
         }
     }

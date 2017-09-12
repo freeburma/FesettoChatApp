@@ -91,8 +91,8 @@ namespace Fasetto.Word.Core
         /// </summary>
         public async Task RegisterAsync()
         {
-            // TODO: Go to register page?
-            // ((WindowViewModel)((MainWindow)Application.Current.MainWindow).DataContext).CurrentPage = ApplicationPage.Register; 
+            IoC.Get<ApplicationViewModel>().SideMenuVisible ^= true;
+            return; 
 
             IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register; 
 
