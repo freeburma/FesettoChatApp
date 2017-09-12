@@ -9,7 +9,7 @@ namespace Fasetto.Word.Core
     /// <summary>
     /// The application stage as view model.
     /// </summary>
-    public class ApplicationViewModel
+    public class ApplicationViewModel : BaseViewModel
     {
         /// <summary>
         /// The curent page of the application <seealso cref="ApplicationPage"/>
