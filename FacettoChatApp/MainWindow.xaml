@@ -163,9 +163,12 @@
             <!-- Adding the LoginPage to the form -->
             <Frame Grid.Column="1" 
                    x:Name="MainFrame" 
-                   Content="{Binding ApplicationViewModel.CurrentPage, 
+                   local:NoFrameHistory.Value="True"
+                   d:DataContext=""
+                   DataContext="{Binding ApplicationViewModel.CurrentPage, 
                              Source={x:Static local:ViewModelLocator.Instance},
                             Converter={local:ApplicationPageValueConverter}}"
+                   Content="{Binding}"
                    Background="Transparent"
                    />
             

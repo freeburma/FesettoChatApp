@@ -11,8 +11,7 @@ namespace Fasetto.Word
     /// <typeparam name="Parent"> The parent class to be the attached propety </typeparam>
     /// <typeparam name="Property"> The type of this attached property </typeparam>
     public abstract class BaseAttachedProperty<Parent, Property>
-        where Parent : BaseAttachedProperty<Parent, Property>, // Parent is ourselves. It allows to access the non-static events.
-                       new()       // Defining the Parent as object 
+        where Parent : new()       // Defining the Parent as object 
     {
 
         #region Public Events 
@@ -61,11 +60,16 @@ namespace Fasetto.Word
         /// <param name="e"> The argunments fro the event </param>
         private static void OnValuePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            // Call the parent function 
-            Instance.OnValueChanged(d, e); 
+           
+            /*
+                Call the parent function. 
+                ? : preventing the null 
+             */
+
+            (Instance as BaseAttachedProperty<Parent, Property>)?.OnValueChanged(d, e);
 
             // Call event listeners 
-            Instance.ValueChanged(d, e); 
+            (Instance as BaseAttachedProperty<Parent, Property>)?.ValueChanged(d, e); 
         }
 
         /// <summary>
@@ -76,10 +80,10 @@ namespace Fasetto.Word
         private static object OnValuePropertyUpdated(DependencyObject d, object value)
         {
             // Call the parent function 
-            Instance.OnValueUpdated(d, value);
+            (Instance as BaseAttachedProperty<Parent, Property>)?.OnValueUpdated(d, value);
 
             // Call event listeners 
-            Instance.ValueUpdated(d, value);
+            (Instance as BaseAttachedProperty<Parent, Property>)?.ValueUpdated(d, value);
 
             // Return the value
             return value;
