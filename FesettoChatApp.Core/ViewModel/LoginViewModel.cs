@@ -61,23 +61,18 @@ namespace Fasetto.Word.Core
         /// <returns></returns>
         public async Task LoginAsync(object parameter)
         {
-            /*
-             // This is define inside the ExpressionHelpers.cs
-            // This prevent the user clicked the Next button when it is waiting for Async Task to complete.
-            if (LoginIsRunning)
-                return;
-
-            LoginIsRunning = true; 
-            */
-
+          
             await RunCommandAsync(() => this.LoginIsRunning, async () =>
             {
-                await Task.Delay(5000);
+                await Task.Delay(1000);
 
-                var email = this.Email;
+                // Go to chat page 
+                IoC.Get<ApplicationViewModel>().GoToPage(ApplicationPage.Chat); 
+
+                // var email = this.Email;
 
                 // Important: Never store unsecure password in variable like this 
-                var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
+                // var pass = (parameter as IHavePassword).SecurePassword.Unsecure();
             });
 
 
@@ -92,7 +87,7 @@ namespace Fasetto.Word.Core
         public async Task RegisterAsync()
         {
            
-            IoC.Get<ApplicationViewModel>().CurrentPage = ApplicationPage.Register; 
+            IoC.Get<ApplicationViewModel>().GoToPage (ApplicationPage.Register); 
 
             await Task.Delay(1); 
 

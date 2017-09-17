@@ -71,7 +71,7 @@ namespace Fasetto.Word
             // If we are setup to animate out on load 
             if (ShouldAnimateOut)
                 // Animate out 
-                await AnimateInAsync(); 
+                await AnimateOutAsync(); 
             else
                 // Animate the page in 
                 await AnimateInAsync();

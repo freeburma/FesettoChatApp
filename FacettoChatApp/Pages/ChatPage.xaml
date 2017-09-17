@@ -9,9 +9,8 @@
       x:Name="Page"
       d:DesignHeight="700" d:DesignWidth="700"
       Title="Chat">
-   
-    <Border>
-       
 
+    <Border>
+        <TextBlock Text="Hello from Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource FontSizeLarge}" />
     </Border>
 </local:BasePage>
