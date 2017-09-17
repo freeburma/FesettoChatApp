@@ -35,3 +35,5 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.csproj.Gen
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.csproj.CoreCompileInputs.cache
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.exe
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.pdb
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\PageHost.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\PageHost.baml

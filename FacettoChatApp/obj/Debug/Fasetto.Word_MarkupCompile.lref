@@ -2,6 +2,7 @@
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\App.xaml;;
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Controls\Chat\ChatListControl.xaml;;
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Controls\Chat\ChatListItemControl.xaml;;
+FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Controls\PageHost.xaml;;
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Controls\SideMenuControl.xaml;;
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Pages\ChatPage.xaml;;
 FE:\Programing\C#\FesettoChatApp\FacettoChatApp\Pages\RegisterPage.xaml;;

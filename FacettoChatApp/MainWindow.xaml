@@ -161,15 +161,12 @@
          
         
             <!-- Adding the LoginPage to the form -->
-            <Frame Grid.Column="1" 
-                   x:Name="MainFrame" 
-                   local:NoFrameHistory.Value="True"
+            <local:PageHost Grid.Column="1" 
                    d:DataContext=""
                    DataContext="{Binding ApplicationViewModel.CurrentPage, 
                              Source={x:Static local:ViewModelLocator.Instance},
                             Converter={local:ApplicationPageValueConverter}}"
-                   Content="{Binding}"
-                   Background="Transparent"
+                   CurrentPage="{Binding}"
                    />
             
            <!-- Calling the Side Menu from SideMenuControl.xaml -->
