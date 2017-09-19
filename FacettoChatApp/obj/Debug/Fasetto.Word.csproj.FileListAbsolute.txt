@@ -1,5 +1,3 @@
-E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListControl.g.cs
-E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\MainWindow.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\App.g.cs
@@ -18,8 +16,6 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\RegisterPage.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\LoginPage.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\App.baml
-E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListControl.baml
-E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatListItemControl.baml
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\SideMenuControl.baml
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.baml
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\RegisterPage.baml
@@ -37,3 +33,11 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.exe
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.pdb
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\PageHost.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\PageHost.baml
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListControl.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.g.cs
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.baml
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListControl.baml
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.baml
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListItemControl.baml

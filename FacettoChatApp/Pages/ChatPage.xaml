@@ -11,6 +11,6 @@
       Title="Chat">
 
     <Border>
-        <TextBlock Text="Hello from Admin" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="{StaticResource FontSizeLarge}" />
+        <local:ChatMessageListControl />
     </Border>
 </local:BasePage>
