@@ -4,10 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Fasetto.Word"
+             xmlns:core="clr-namespace:Fasetto.Word.Core;assembly=Fasetto.Word.Core"
              mc:Ignorable="d" 
              d:DesignWidth="300"
              >
-    <Border Padding="5" Background="{StaticResource WordBlueBrush}">
+    <Border Padding="5" 
+            Background="{StaticResource WordBlueBrush}"
+            d:DataContext="{x:Static core:ChatMessageListItemDesignModel.Instance}"
+         >
         <Grid>
             
             <!-- Profiel picture -->
@@ -21,7 +25,7 @@
                     BorderBrush="{StaticResource ForegroundLightBrush}"
                     BorderThickness="1"
                 >
-                <TextBlock Text="LM" 
+                <TextBlock Text="{Binding Initials}" 
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
                            Foreground="{StaticResource ForegroundLightBrush}"
@@ -48,7 +52,7 @@
                                TextWrapping="Wrap"
                                FontFamily="{StaticResource LatoRegular}"
                                Foreground="{StaticResource WordDarkBlueBrush}"
-                               Text="This chat app is awsome. When is it coming out? I want to use it."
+                               Text="{Binding Message}"
                                />
                 </Border>
 
@@ -67,12 +71,28 @@
                        Data="M 0,0 L 10,10 L 20,0" 
                      />
 
-                <TextBlock Grid.Row="2" 
-                           Text="11:54am"
-                           Foreground="{StaticResource ForegroundLightBrush}"
-                           HorizontalAlignment="Right"
-                           FontSize="{StaticResource FontSizeSmall}"
-                      />
+                <!-- Time container -->
+                <StackPanel Grid.Row="2" 
+                            Orientation="Horizontal"   
+                         >
+                    
+                    <!-- Send time-->
+                    <TextBlock Text="{Binding MessageSentTime, Converter={local:TimeToDisplayTimeConverter}}"
+                               Foreground="{StaticResource ForegroundLightBrush}"
+                               HorizontalAlignment="Right"
+                               FontSize="{StaticResource FontSizeSmall}"
+                               FontFamily="{StaticResource LatoRegular}"
+                               Margin="0 0 15 0"
+                          />
+
+                    <!-- Read time-->
+                    <TextBlock Text="{Binding MessageReadTime, Converter={local:TimeToDisplayTimeConverter}}"
+                               Foreground="{StaticResource WordDarkBlueBrush}"
+                               HorizontalAlignment="Right"
+                               FontSize="{StaticResource FontSizeSmall}"
+                               FontFamily="{StaticResource LatoRegular}"
+                          />
+                </StackPanel>
 
             </Grid>
         </Grid>
