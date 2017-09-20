@@ -18,6 +18,7 @@
             <Border VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="0 7.5 0 7.5"
+                    Visibility="{Binding SendByMe, Converter={local:BooleanToVisibilityConverter}}"
                     CornerRadius="{Binding ActualWidth, RelativeSource ={RelativeSource Self}}"
                     Height="{Binding ActualWidth, RelativeSource ={RelativeSource Self}}"
                     Width="35"
@@ -34,7 +35,33 @@
             </Border>
 
             <!-- Chat message container -->
-            <Grid Margin="25 0 0 0" HorizontalAlignment="Left">
+            <Grid Margin="25 0 25 0" 
+                  HorizontalAlignment="{Binding SendByMe, Converter={local:SentByMeToAlignmentConverter}}"
+                >
+
+                <!-- Mouse over shows time-->
+                <Grid.Triggers>
+                    <EventTrigger RoutedEvent="MouseEnter">
+                        <BeginStoryboard >
+                            <Storyboard Storyboard.TargetName="ExtraDetails" Storyboard.TargetProperty="Opacity">
+                                <DoubleAnimation To="1"
+                                                 Duration="00:00:00.5" 
+                                               />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+
+                    <!-- Mouse leave hides time -->
+                    <EventTrigger RoutedEvent="MouseLeave">
+                        <BeginStoryboard >
+                            <Storyboard Storyboard.TargetName="ExtraDetails" Storyboard.TargetProperty="Opacity">
+                                <DoubleAnimation To="0"
+                                                 Duration="00:00:00.5" 
+                                               />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Grid.Triggers>
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*" />
@@ -45,7 +72,7 @@
                 <!-- Speech bubble rectangle -->
                    <Border CornerRadius="10"
                         Padding="15"
-                        Background="{StaticResource ForegroundLightBrush}"
+                        Background="{Binding SendByMe, Converter={local:SentByMeToBackgroundConverter}}"
                         >
                     <!-- Message text -->
                     <TextBlock VerticalAlignment="Center"
@@ -67,12 +94,15 @@
                        Panel.ZIndex="1"
                        StrokeThickness="0"
                        Margin="15 -1 15 0"
-                       Fill="{StaticResource ForegroundLightBrush}"
+                       Fill="{Binding SendByMe, Converter={local:SentByMeToBackgroundConverter}}"                       
+                       HorizontalAlignment="{Binding SendByMe, Converter={local:SentByMeToAlignmentConverter}}"                                                  
                        Data="M 0,0 L 10,10 L 20,0" 
                      />
 
                 <!-- Time container -->
-                <StackPanel Grid.Row="2" 
+                <StackPanel Name="ExtraDetails"
+                            Opacity="0"
+                            Grid.Row="2" 
                             Orientation="Horizontal"   
                          >
                     
@@ -86,7 +116,7 @@
                           />
 
                     <!-- Read time-->
-                    <TextBlock Text="{Binding MessageReadTime, Converter={local:TimeToDisplayTimeConverter}}"
+                    <TextBlock Text="{Binding MessageReadTime, Converter={local:TimeToReadTimeConverter}}"
                                Foreground="{StaticResource WordDarkBlueBrush}"
                                HorizontalAlignment="Right"
                                FontSize="{StaticResource FontSizeSmall}"
