@@ -66,7 +66,17 @@ namespace Fasetto.Word
             // right after this call due to moving frames.
             if (oldPageContent is BasePage oldPage)
             {
+                // Tell old page to animate out 
                 oldPage.ShouldAnimateOut = true;
+
+                // Once it is done, remove it.
+                Task.Delay((int)(oldPage.SlideSeconds * 1000)).ContinueWith((t) =>
+               {
+                   // Remove old page 
+                   Application.Current.Dispatcher.Invoke(() =>
+                                                            oldPageFrame.Content = null
+                                                        ); // Jumping back to single UI thread
+               }); 
             }
 
             // Set the new page content 

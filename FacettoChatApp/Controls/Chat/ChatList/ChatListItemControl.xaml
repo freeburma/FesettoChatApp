@@ -79,14 +79,14 @@
 
 
                             <DataTrigger Binding="{Binding IsSelected}" Value="True" >
-                                <Setter Property="Background" TargetName="background" Value="{StaticResource WordLightBlueBrush}"/>
+                                <Setter Property="Background" TargetName="background" Value="{StaticResource WordVeryVeryLightBlueBrush}"/>
                             </DataTrigger>
 
                             <EventTrigger RoutedEvent="MouseEnter">
                                 <!-- Animation -->
                                 <BeginStoryboard>
                                     <Storyboard>
-                                        <ColorAnimation To="{StaticResource WordLightBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color" />
+                                        <ColorAnimation To="{StaticResource WordVeryVeryLightBlue}" Duration="0:0:0.3" Storyboard.TargetName="container" Storyboard.TargetProperty="Background.Color" />
                                     </Storyboard>
                                 </BeginStoryboard>
                             </EventTrigger>

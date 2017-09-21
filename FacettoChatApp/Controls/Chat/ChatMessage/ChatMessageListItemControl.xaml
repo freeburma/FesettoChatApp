@@ -9,7 +9,6 @@
              d:DesignWidth="300"
              >
     <Border Padding="5" 
-            Background="{StaticResource WordBlueBrush}"
             d:DataContext="{x:Static core:ChatMessageListItemDesignModel.Instance}"
          >
         <Grid>
@@ -103,13 +102,13 @@
                 <StackPanel Name="ExtraDetails"
                             Opacity="0"
                             Grid.Row="2" 
+                            HorizontalAlignment="{Binding SendByMe, Converter={local:SentByMeToAlignmentConverter}, ConverterParameter=True}"
                             Orientation="Horizontal"   
                          >
                     
                     <!-- Send time-->
                     <TextBlock Text="{Binding MessageSentTime, Converter={local:TimeToDisplayTimeConverter}}"
                                Foreground="{StaticResource ForegroundLightBrush}"
-                               HorizontalAlignment="Right"
                                FontSize="{StaticResource FontSizeSmall}"
                                FontFamily="{StaticResource LatoRegular}"
                                Margin="0 0 15 0"
@@ -118,7 +117,6 @@
                     <!-- Read time-->
                     <TextBlock Text="{Binding MessageReadTime, Converter={local:TimeToReadTimeConverter}}"
                                Foreground="{StaticResource WordDarkBlueBrush}"
-                               HorizontalAlignment="Right"
                                FontSize="{StaticResource FontSizeSmall}"
                                FontFamily="{StaticResource LatoRegular}"
                           />

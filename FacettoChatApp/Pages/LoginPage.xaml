@@ -40,7 +40,10 @@
                             />
 
                             <!-- Email -->
-                            <TextBox Text="{Binding Email}" Tag="Email"/>
+                            <TextBox Text="{Binding Email}" 
+                                     Tag="Email"
+                                     local:IsFocusedProperty.Value="True"
+                                     />
 
                             <!-- Password -->
                             <PasswordBox x:Name="PasswordText" Tag="Password" Margin="0 0 0 30" />
@@ -48,8 +51,11 @@
                             <!-- 
                                 Next Button 
                                 Page = x:Name="Page" : declares at the headers
+                                IsDefault="True" : Is listening the user input "ENTER KEY"
+                                
                             -->
                             <Button Content="Login" 
+                                    IsDefault="True"
                                     local:IsBusyProperty.Value="{Binding LoginIsRunning}"
                                     Command="{Binding LoginCommand}" 
                                     CommandParameter="{Binding ElementName=Page}" 
