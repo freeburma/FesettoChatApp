@@ -1,3 +1,4 @@
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.csprojResolveAssemblyReference.cache
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatMessage\ChatMessageListControl.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListControl.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Controls\Chat\ChatList\ChatListItemControl.g.cs
@@ -16,7 +17,7 @@ E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Fasetto.Word.Core.dll
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Microsoft.Windows.Shell.dll
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Fasetto.Word.Core.pdb
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Microsoft.Windows.Shell.pdb
-E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Fasetto.Word.csprojResolveAssemblyReference.cache
+E:\Programing\C#\FesettoChatApp\FacettoChatApp\bin\Debug\Ninject.xml
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\ChatPage.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\RegisterPage.g.cs
 E:\Programing\C#\FesettoChatApp\FacettoChatApp\obj\Debug\Pages\LoginPage.g.cs

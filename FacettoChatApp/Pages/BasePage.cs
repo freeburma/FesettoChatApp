@@ -1,5 +1,6 @@
 ﻿using Fasetto.Word.Core;
 using System;//
+using System.ComponentModel;
 using System.Threading.Tasks;//
 using System.Windows;//
 using System.Windows.Controls;  //
@@ -12,7 +13,7 @@ namespace Fasetto.Word
     /// <summary>
     /// A base page for all pages to gain base functionality
     /// </summary>
-    public class BasePage : Page
+    public class BasePage : UserControl
     {
         #region Public Properties
 
@@ -46,6 +47,9 @@ namespace Fasetto.Word
         /// </summary>
         public BasePage()
         {
+            // Don't bother animating in design time.
+            if (DesignerProperties.GetIsInDesignMode(this))
+                return;
 
             // If we are animating in, hide to begin with
             if (this.PageLoadAnimation != PageAnimation.None)
@@ -68,6 +72,8 @@ namespace Fasetto.Word
         /// <param name="e">   </param>
         private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
+            
+
             // If we are setup to animate out on load 
             if (ShouldAnimateOut)
                 // Animate out 
@@ -97,7 +103,7 @@ namespace Fasetto.Word
                     // MessageBox.Show(">>> PageAnimation.SlideAndFadeInFromRight");
 
                     // Start the animation
-                    await this.SlideAndFadeInFromRightAsync(this.SlideSeconds * 2);
+                    await this.SlideAndFadeInFromRightAsync(this.SlideSeconds, width: (int)Application.Current.MainWindow.Width);
 
                     break;
 

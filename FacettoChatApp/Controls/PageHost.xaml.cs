@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using Fasetto.Word.Core;
+using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -37,6 +39,13 @@ namespace Fasetto.Word
         public PageHost()
         {
             InitializeComponent();
+
+            // If we are in Design Mode, show the current page
+            // as the dependency property doesn't fire.
+            if (DesignerProperties.GetIsInDesignMode(this))
+            {
+                NewPage.Content = (BasePage) new ApplicationPageValueConverter().Convert(IoC.Get<ApplicationViewModel>().CurrentPage); 
+            }
         }
         #endregion
 
