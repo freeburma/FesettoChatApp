@@ -41,14 +41,75 @@
                        VerticalAlignment="Center"
                     />
 
-            <!-- -->
-            <StackPanel Orientation="Horizontal" Grid.Column="1" >
-                <Button Style="{StaticResource IconButton}" Content="{StaticResource FontAwesomeSearchIcon}" />
-                <Button Style="{StaticResource IconButton}" Content="{StaticResource FontAwesomeEllipsisVerticalIcon}" />
+            <!-- Main buttons -->
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FontAwesomeSearchIcon}"/>
+                <Button Style="{StaticResource IconGrowButton}" Content="{StaticResource FontAwesomeEllipsisVerticalIcon}" />
             </StackPanel>
         </Grid>
         
         <!-- Chat list -->
         <local:ChatMessageListControl Grid.Row="1" />
+
+        <!-- Message Send Textbox -->
+        <Grid Grid.Row="2" 
+              MinHeight="50"
+              MaxHeight="100"
+              Background="{StaticResource ForegroundLightBrush}"
+            >
+            <Grid.ColumnDefinitions>
+                <!-- Attach button -->
+                <ColumnDefinition Width="Auto" />
+                
+                <!-- Text entry box -->
+                <ColumnDefinition Width="*" />
+                
+                <!-- Additional buttons -->
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Attach Button -->
+            <Button Style="{StaticResource IconGrowButton}"
+                    Height="{Binding MinHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
+                    Content="{StaticResource FontAwesomePaperClipIcon}" 
+                    VerticalAlignment="Top"
+                    Foreground="{StaticResource ForegroundDarkBrush}"
+                  />
+
+            <!-- Message box-->
+            <TextBox Grid.Column="1"
+                     Tag="Write a message"
+                     FontSize="{StaticResource FontSizeRegular}"
+                     VerticalAlignment="Center"
+                     BorderThickness="0"
+                     AcceptsReturn="True"
+                     AcceptsTab="True"
+                     VerticalScrollBarVisibility="Auto"
+                   />
+
+            <!-- Additional buttons -->
+            <StackPanel Grid.Column="2"
+                        Orientation="Horizontal"
+                        Margin="0 0 8 0"
+                      >
+                <!-- Emoji Button -->
+                <Button Style="{StaticResource IconGrowButton}"
+                        Height="{Binding MinHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
+                        Content="{StaticResource FontAwesomeEmojiIcon}" 
+                        VerticalAlignment="Top"
+                        Foreground="{StaticResource WordOrangeBrush}"
+                    />
+
+                <!-- Send Button -->
+                <Button Content="Send"
+                        Padding="8"
+                        VerticalAlignment="Top"
+                        Background="{StaticResource WordGreenBrush}"
+                        FontSize="{StaticResource FontSizeRegular}"
+                      />
+
+            </StackPanel>
+        </Grid>
+        
     </Grid>
 </local:BasePage>
