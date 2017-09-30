@@ -153,7 +153,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            
+
             <!-- Blue background image -->
             <Grid.Background>
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
@@ -178,6 +178,14 @@
                 <local:ChatListControl />
                 
             </local:SideMenuControl>
+
+            <!-- Testing Scroll bar -->
+            <!--
+            <ScrollViewer Width="50" Height="50" HorizontalScrollBarVisibility="Auto">
+                <Border Background="Red" Width="100" Height="100" />
+            </ScrollViewer>
+            -->
+            
         </Grid>
     </Border>
 </Window>
