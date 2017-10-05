@@ -89,5 +89,26 @@ namespace Fasetto.Word
         }
     }
 
+    /// <summary>
+    /// Animate a framework element sliding it up from the bottom on show and 
+    /// sliding out to the out on hide 
+    /// </summary>
+    public class AnimateSlideInFromBottomProperty : AnimateBaseProperty<AnimateSlideInFromBottomProperty>
+    {
+        protected override async void DoAnimation(FrameworkElement element, bool value)
+        {
+            if (value)
+            {
+                // Animate in 
+                await element.SlideAndFadeInFromBottomAsync(FirstLoad ? 0.3f : 0.6f, keepMargin: false);
+            }
+            else
+            {
+                // Animate out 
+                await element.SlideAndFadeOutToBottomAsync(FirstLoad ? 0.3f : 0.6f, keepMargin: false);
+            }
+        }
+    }
+
 
 }// end namespace

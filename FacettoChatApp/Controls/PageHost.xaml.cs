@@ -11,6 +11,7 @@ namespace Fasetto.Word
     /// </summary>
     public partial class PageHost : UserControl
     {
+
         #region Dependency Properties
 
         /// <summary>
