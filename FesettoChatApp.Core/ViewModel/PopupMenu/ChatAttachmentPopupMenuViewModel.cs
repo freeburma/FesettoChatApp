@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace Fasetto.Word.Core
 {
     /// <summary>
@@ -19,6 +21,16 @@ namespace Fasetto.Word.Core
         /// </summary>
         public ChatAttachmentPopupMenuViewModel()
         {
+            Menu = new MenuViewModel
+            {
+                Items = new List<MenuItemViewModel>(new[]
+                {
+                    new MenuItemViewModel { Text = "Attach a file ...", Type = MenuItemType.Header },
+                    new MenuItemViewModel {Text = "From Computer", Icon = IconType.File},
+                    new MenuItemViewModel {Text = "From Pictures", Icon = IconType.Picture},
+                })
+            };
+
             
         }
 
